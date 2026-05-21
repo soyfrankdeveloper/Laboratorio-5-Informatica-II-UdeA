@@ -1,0 +1,4 @@
+Choque con obstaculo en t=0.1 posicion 70.3 15
+Choque con obstaculo en t=0.2 posicion 70.6 15
+Choque con obstaculo en t=1.7 posicion 18.5 15
+Choque con obstaculo en t=8.9 posicion 15 57.8001
