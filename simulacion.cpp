@@ -7,13 +7,22 @@ using namespace std;
 Simulacion::Simulacion()
 {
     cantidad = 0;
+<<<<<<< HEAD
     cantidadObstaculos = 0;
 
     anchoCaja = 600;
+=======
+
+    cantidadObstaculos = 0;
+
+    anchoCaja = 600;
+
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
     altoCaja = 600;
 
     tiempo = 0;
 
+<<<<<<< HEAD
     for(int i = 0; i < 4; i++)
     {
         particulas[i].setMasa(0);
@@ -28,6 +37,16 @@ Simulacion::Simulacion()
     archivo.close();
 
     archivo.open("colisiones.txt");
+=======
+    ofstream archivo;
+
+    archivo.open("datos.txt");
+
+    archivo.close();
+
+    archivo.open("colisiones.txt");
+
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
     archivo.close();
 }
 
@@ -49,6 +68,7 @@ void Simulacion::agregarObstaculo(Obstaculo o)
     }
 }
 
+<<<<<<< HEAD
 void Simulacion::prepararProyectil(float x, float y, float vx, float vy, float masa)
 {
     cantidad = 4;
@@ -64,6 +84,8 @@ void Simulacion::prepararProyectil(float x, float y, float vx, float vy, float m
     }
 }
 
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 void Simulacion::actualizar(float dt)
 {
     tiempo = tiempo + dt;
@@ -177,6 +199,7 @@ void Simulacion::guardarColision(string texto)
     archivo.close();
 }
 
+<<<<<<< HEAD
 int Simulacion::contarObstaculosActivos()
 {
     int activos = 0;
@@ -192,6 +215,8 @@ int Simulacion::contarObstaculosActivos()
     return activos;
 }
 
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 Particula& Simulacion::getParticula(int i)
 {
     return particulas[i];
@@ -200,4 +225,8 @@ Particula& Simulacion::getParticula(int i)
 Obstaculo& Simulacion::getObstaculo(int i)
 {
     return obstaculos[i];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9

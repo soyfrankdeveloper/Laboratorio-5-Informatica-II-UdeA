@@ -1,4 +1,5 @@
 #include "interfazgrafica.h"
+<<<<<<< HEAD
 
 InterfazGrafica::InterfazGrafica(QWidget *parent)
     : QMainWindow(parent)
@@ -105,10 +106,26 @@ InterfazGrafica::InterfazGrafica(QWidget *parent)
     timerPanel->start(200);
 
     actualizarPanel();
+=======
+#include "ui_interfazgrafica.h"
+
+InterfazGrafica::InterfazGrafica(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::InterfazGrafica)
+{
+    ui->setupUi(this);
+
+    escena = new Escena(this);
+
+    escena->iniciar();
+
+    setCentralWidget(escena);
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 }
 
 InterfazGrafica::~InterfazGrafica()
 {
+<<<<<<< HEAD
 }
 
 void InterfazGrafica::iniciarSimulacion()
@@ -163,3 +180,7 @@ void InterfazGrafica::actualizarPanel()
         labelGanador->setText("Ganador: ninguno");
     }
 }
+=======
+    delete ui;
+}
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9

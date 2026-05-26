@@ -6,9 +6,12 @@ Obstaculo::Obstaculo()
     y = 0;
     ancho = 10;
     alto = 10;
+<<<<<<< HEAD
 
     resistencia = 100;
     activo = true;
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 }
 
 Obstaculo::Obstaculo(float posX, float posY, float a, float h)
@@ -17,9 +20,12 @@ Obstaculo::Obstaculo(float posX, float posY, float a, float h)
     y = posY;
     ancho = a;
     alto = h;
+<<<<<<< HEAD
 
     resistencia = 100;
     activo = true;
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 }
 
 float Obstaculo::getX()
@@ -41,6 +47,7 @@ float Obstaculo::getAlto()
 {
     return alto;
 }
+<<<<<<< HEAD
 
 float Obstaculo::getResistencia()
 {
@@ -62,3 +69,5 @@ void Obstaculo::recibirDanio(float danio)
         activo = false;
     }
 }
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9

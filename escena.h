@@ -5,7 +5,10 @@
 #include <QGraphicsScene>
 #include <QGraphicsEllipseItem>
 #include <QGraphicsRectItem>
+<<<<<<< HEAD
 #include <QGraphicsTextItem>
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 #include <QTimer>
 
 #include "simulacion.h"
@@ -26,6 +29,7 @@ private:
 
     QGraphicsRectItem *obstaculosGraficos[4];
 
+<<<<<<< HEAD
     QGraphicsTextItem *textosResistencia[4];
 
     int turnoActual;
@@ -34,6 +38,8 @@ private:
 
     bool juegoTerminado;
 
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 public:
 
     Escena(QWidget *parent = nullptr);
@@ -44,6 +50,7 @@ public:
     void pausar();
     void reiniciar();
 
+<<<<<<< HEAD
     void lanzar(float angulo, float velocidad, float masa);
 
     void actualizarObstaculos();
@@ -53,9 +60,15 @@ public:
     int getGanador();
     bool estaTerminado();
 
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 public slots:
 
     void actualizarAnimacion();
 };
 
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9

@@ -7,7 +7,10 @@
 *****************************************************************************/
 
 #include "../../../interfazgrafica.h"
+<<<<<<< HEAD
 #include <QtGui/qtextcursor.h>
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -39,6 +42,7 @@ template <> constexpr inline auto InterfazGrafica::qt_create_metaobjectdata<qt_m
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
+<<<<<<< HEAD
         "InterfazGrafica",
         "iniciarSimulacion",
         "",
@@ -59,6 +63,12 @@ template <> constexpr inline auto InterfazGrafica::qt_create_metaobjectdata<qt_m
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'actualizarPanel'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+=======
+        "InterfazGrafica"
+    };
+
+    QtMocHelpers::UintData qt_methods {
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -80,6 +90,7 @@ Q_CONSTINIT const QMetaObject InterfazGrafica::staticMetaObject = { {
 void InterfazGrafica::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     auto *_t = static_cast<InterfazGrafica *>(_o);
+<<<<<<< HEAD
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->iniciarSimulacion(); break;
@@ -90,6 +101,11 @@ void InterfazGrafica::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         default: ;
         }
     }
+=======
+    (void)_t;
+    (void)_c;
+    (void)_id;
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
     (void)_a;
 }
 
@@ -109,6 +125,7 @@ void *InterfazGrafica::qt_metacast(const char *_clname)
 int InterfazGrafica::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
+<<<<<<< HEAD
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -121,6 +138,8 @@ int InterfazGrafica::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 5;
     }
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
     return _id;
 }
 QT_WARNING_POP

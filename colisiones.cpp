@@ -1,6 +1,9 @@
 #include "colisiones.h"
 #include <cmath>
+<<<<<<< HEAD
 #include <string>
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 
 Colisiones::Colisiones()
 {
@@ -17,11 +20,14 @@ float Colisiones::distancia(float x1, float y1, float x2, float y2)
 
 bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, string &texto)
 {
+<<<<<<< HEAD
     if(o.estaActivo() == false)
     {
         return false;
     }
 
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
     float px = p.getX();
     float py = p.getY();
     float r  = p.getRadio();
@@ -36,6 +42,7 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
 
     if(tocaX && tocaY)
     {
+<<<<<<< HEAD
         float velocidadImpacto = sqrt(p.getVx() * p.getVx() + p.getVy() * p.getVy());
 
         float factorDanio = 0.5;
@@ -44,6 +51,8 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
 
         o.recibirDanio(danio);
 
+=======
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
         float centroX = o.getX() + o.getAncho() / 2;
         float centroY = o.getY() + o.getAlto()  / 2;
 
@@ -55,6 +64,7 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
             p.setVx(-p.getVx() * restitucion);
 
             if(difX > 0)
+<<<<<<< HEAD
             {
                 p.setX(derecha + r);
             }
@@ -62,12 +72,18 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
             {
                 p.setX(izquierda - r);
             }
+=======
+                p.setX(derecha + r);
+            else
+                p.setX(izquierda - r);
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
         }
         else
         {
             p.setVy(-p.getVy() * restitucion);
 
             if(difY > 0)
+<<<<<<< HEAD
             {
                 p.setY(abajo + r);
             }
@@ -75,14 +91,26 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
             {
                 p.setY(arriba - r);
             }
+=======
+                p.setY(abajo + r);
+            else
+                p.setY(arriba - r);
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
         }
 
         texto = "Choque con obstaculo en t=" +
                 to_string(tiempo) +
+<<<<<<< HEAD
                 " danio=" +
                 to_string(danio) +
                 " resistencia restante=" +
                 to_string(o.getResistencia());
+=======
+                " posicion " +
+                to_string(p.getX()) +
+                " " +
+                to_string(p.getY());
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 
         return true;
     }
@@ -130,10 +158,16 @@ bool Colisiones::choqueParticulas(Particula &p1, Particula &p2, float tiempo, st
         p2.setVy(0);
 
         texto = "Choque entre particulas en t=" +
+<<<<<<< HEAD
                 to_string(tiempo) +
                 " masa final=" +
                 to_string(masaTotal) +
                 " velocidad=" +
+=======
+                to_string(tiempo) +  " masa final " +
+                to_string(masaTotal) +
+                " velocidad " +
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
                 to_string(nuevaVx) +
                 " " +
                 to_string(nuevaVy);

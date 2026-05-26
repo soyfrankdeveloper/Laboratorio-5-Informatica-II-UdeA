@@ -2,6 +2,7 @@
 #define INTERFAZGRAFICA_H
 
 #include <QMainWindow>
+<<<<<<< HEAD
 #include <QPushButton>
 #include <QLabel>
 #include <QWidget>
@@ -12,14 +13,36 @@
 
 #include "escena.h"
 
+=======
+#include <QGraphicsScene>
+#include <QTimer>
+
+#include "simulacion.h"
+#include "escena.h"
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class InterfazGrafica;
+}
+QT_END_NAMESPACE
+
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 class InterfazGrafica : public QMainWindow
 {
     Q_OBJECT
 
+<<<<<<< HEAD
+=======
+public:
+    explicit InterfazGrafica(QWidget *parent = nullptr);
+    ~InterfazGrafica();
+
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
 private:
 
     Escena *escena;
 
+<<<<<<< HEAD
     QWidget *contenedorPrincipal;
     QWidget *panelControles;
 
@@ -63,3 +86,15 @@ private slots:
 };
 
 #endif
+=======
+    Ui::InterfazGrafica *ui;
+
+    QGraphicsScene *scene;
+
+    QTimer *timer;
+
+    Simulacion simulacion;
+};
+
+#endif
+>>>>>>> 83b9b8fe9b44a5208812709ff0ce8710805ce5d9
