@@ -1,4 +1,6 @@
-Choque con obstaculo en t=0.100000 posicion 70.300003 15.000000
-Choque con obstaculo en t=0.200000 posicion 70.600006 15.000000
-Choque con obstaculo en t=1.700000 posicion 18.500000 15.000000
-Choque con obstaculo en t=8.899998 posicion 15.000000 57.800068
+Choque con obstaculo en t=1.000000 posicion 420.000000 397.000000
+Choque con obstaculo en t=14.000000 posicion 156.000000 140.000000
+Choque con obstaculo en t=27.000000 posicion 220.000000 154.000000
+Choque con obstaculo en t=106.000000 posicion 412.000000 140.000000
+Choque con obstaculo en t=216.000000 posicion 220.000000 362.799469
+Choque con obstaculo en t=240.000000 posicion 378.800659 340.000000

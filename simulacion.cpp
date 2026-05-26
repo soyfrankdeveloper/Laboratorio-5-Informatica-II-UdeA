@@ -10,9 +10,9 @@ Simulacion::Simulacion()
 
     cantidadObstaculos = 0;
 
-    anchoCaja = 100;
+    anchoCaja = 600;
 
-    altoCaja = 100;
+    altoCaja = 600;
 
     tiempo = 0;
 
@@ -156,4 +156,14 @@ void Simulacion::guardarColision(string texto)
     archivo << texto << endl;
 
     archivo.close();
+}
+
+Particula& Simulacion::getParticula(int i)
+{
+    return particulas[i];
+}
+
+Obstaculo& Simulacion::getObstaculo(int i)
+{
+    return obstaculos[i];
 }

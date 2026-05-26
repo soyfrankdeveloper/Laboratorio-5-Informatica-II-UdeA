@@ -6,6 +6,12 @@ InterfazGrafica::InterfazGrafica(QWidget *parent)
     , ui(new Ui::InterfazGrafica)
 {
     ui->setupUi(this);
+
+    escena = new Escena(this);
+
+    escena->iniciar();
+
+    setCentralWidget(escena);
 }
 
 InterfazGrafica::~InterfazGrafica()

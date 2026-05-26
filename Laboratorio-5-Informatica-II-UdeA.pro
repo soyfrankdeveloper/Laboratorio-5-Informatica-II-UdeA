@@ -3,6 +3,7 @@ QT += widgets
 CONFIG += c++17
 
 SOURCES += \
+    escena.cpp \
     main.cpp \
     interfazgrafica.cpp \
     particula.cpp \
@@ -11,6 +12,7 @@ SOURCES += \
     colisiones.cpp
 
 HEADERS += \
+    escena.h \
     interfazgrafica.h \
     particula.h \
     simulacion.h \

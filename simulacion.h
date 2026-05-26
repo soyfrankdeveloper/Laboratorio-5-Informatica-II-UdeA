@@ -48,6 +48,12 @@ public:
     void guardarDatos();
     void guardarColision(string texto);
 
+    Obstaculo& getObstaculo(int i);
+
+    Particula& getParticula(int i);
+
+
+
 };
 
 #endif
