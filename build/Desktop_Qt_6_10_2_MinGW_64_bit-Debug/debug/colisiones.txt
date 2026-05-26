@@ -1,0 +1,11 @@
+Choque con obstaculo en t=15.000000 danio=25.000000 resistencia restante=75.000000
+Choque con obstaculo en t=175.000000 danio=22.638464 resistencia restante=77.361534
+Choque con obstaculo en t=221.000000 danio=19.999998 resistencia restante=55.000000
+Choque con obstaculo en t=283.000000 danio=18.110769 resistencia restante=36.889229
+Choque con obstaculo en t=427.000000 danio=25.000000 resistencia restante=75.000000
+Choque con obstaculo en t=587.000000 danio=22.638464 resistencia restante=54.723068
+Choque con obstaculo en t=633.000000 danio=19.999998 resistencia restante=55.000000
+Choque con obstaculo en t=695.000000 danio=18.110769 resistencia restante=36.889229
+Choque con obstaculo en t=829.000000 danio=16.000000 resistencia restante=20.889229
+Choque con obstaculo en t=935.000000 danio=14.488617 resistencia restante=85.511383
+Choque con obstaculo en t=979.000000 danio=12.799999 resistencia restante=41.923069
