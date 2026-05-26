@@ -1,6 +1,5 @@
 #include "colisiones.h"
 #include <cmath>
-#include <sstream>
 
 Colisiones::Colisiones()
 {
@@ -41,7 +40,6 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
         {
             p.setVx(-p.getVx() * restitucion);
 
-            // Sacar la particula del borde para que no quede atrapada
             if(difX > 0)
                 p.setX(derecha + r);
             else
@@ -57,16 +55,12 @@ bool Colisiones::choqueObstaculo(Particula &p, Obstaculo &o, float tiempo, strin
                 p.setY(arriba - r);
         }
 
-        stringstream ss;
-
-        ss << "Choque con obstaculo en t="
-           << tiempo
-           << " posicion "
-           << p.getX()
-           << " "
-           << p.getY();
-
-        texto = ss.str();
+        texto = "Choque con obstaculo en t=" +
+                to_string(tiempo) +
+                " posicion " +
+                to_string(p.getX()) +
+                " " +
+                to_string(p.getY());
 
         return true;
     }
@@ -113,18 +107,13 @@ bool Colisiones::choqueParticulas(Particula &p1, Particula &p2, float tiempo, st
         p2.setVx(0);
         p2.setVy(0);
 
-        stringstream ss;
-
-        ss << "Choque entre particulas en t="
-           << tiempo
-           << " masa final "
-           << masaTotal
-           << " velocidad "
-           << nuevaVx
-           << " "
-           << nuevaVy;
-
-        texto = ss.str();
+        texto = "Choque entre particulas en t=" +
+                to_string(tiempo) +  " masa final " +
+                to_string(masaTotal) +
+                " velocidad " +
+                to_string(nuevaVx) +
+                " " +
+                to_string(nuevaVy);
 
         return true;
     }
